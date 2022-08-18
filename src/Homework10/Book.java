@@ -3,9 +3,10 @@ package Homework10;
 import java.util.Objects;
 
 public class Book {
-    String nameBook;
+    static String nameBook;
     String name;
     int year;
+    static int a = Objects.hash(nameBook);
 
 
 
@@ -42,11 +43,16 @@ public class Book {
     }
     @Override
     public int hashCode() {
-       return Objects.hash(nameBook);
+       return Objects.hash(nameBook,name,year);
+
    }
 
 
+
     }
+
+
+
 
 
 

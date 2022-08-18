@@ -33,6 +33,8 @@ public class Main {
         Author2.getFamilia();
         System.out.println(Author2);
         System.out.println(Author2.equals(Author1));
+        System.out.println(Book1);
+        System.out.println( Book.a);
 
 
 
