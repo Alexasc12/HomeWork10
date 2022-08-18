@@ -1,7 +1,7 @@
 package Homework10;
 
 public class Book {
-    String nameBook = " Вава";
+    String nameBook ;
     String name;
     int year;
 
@@ -18,4 +18,19 @@ public class Book {
         this.year = year;
 
     }
+
+    public Book(String name, String nameBook, int year) {
+         this.name = name;
+         this.nameBook = nameBook;
+         this.year = year;
+    }
+
+    public boolean equals(Object Book1) {
+        if (this.getClass() != Book1.getClass()) {
+            return false;
+        }
+        Book Book2 = (Book) Book1;
+        return nameBook.equals(Book2.nameBook);
+    }
+
 }
